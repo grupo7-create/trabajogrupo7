@@ -9,8 +9,8 @@
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="412dp"
-        android:layout_height="186dp"
+        android:layout_width="407dp"
+        android:layout_height="157dp"
         app:srcCompat="@drawable/ecoreciclagr7"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="4dp" />
@@ -19,26 +19,11 @@
         android:id="@+id/txt_ecorecicla1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="172dp"
         android:text="EcoRecicla"
         android:textSize="34sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/txt_nombre1"
-        android:layout_width="259dp"
-        android:layout_height="41dp"
-        android:layout_marginTop="272dp"
-        android:ems="10"
-        android:hint="Ingrese su nombre completo"
-        android:inputType="text"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.809"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -47,7 +32,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="28dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="28dp"
         android:text="Correo electrónico"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -57,32 +42,20 @@
         android:id="@+id/txt_email1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="28dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="24dp"
         android:ems="10"
         android:hint="Ingrese su E-mail"
         android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_nombre1" />
 
-    <TextView
-        android:id="@+id/txt_username"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
-        android:text="Username"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toStartOf="@+id/txt_username1"
-        app:layout_constraintHorizontal_bias="0.311"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_email" />
-
     <EditText
         android:id="@+id/txt_username1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="24dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
         android:ems="10"
         android:hint="Ingrese su Username"
         android:inputType="text"
@@ -90,22 +63,23 @@
         app:layout_constraintTop_toBottomOf="@+id/txt_email1" />
 
     <TextView
-        android:id="@+id/txt_contra1"
+        android:id="@+id/txt_username"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
-        android:text="Contraseña"
-        app:layout_constraintEnd_toStartOf="@+id/editTextText4"
-        app:layout_constraintHorizontal_bias="0.311"
+        android:layout_marginTop="28dp"
+        android:text="Username"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/txt_username1"
+        app:layout_constraintHorizontal_bias="0.254"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_username" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_email" />
 
     <EditText
         android:id="@+id/editTextText4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
         android:ems="10"
         android:hint="Ingrese su contraseña"
         android:inputType="text"
@@ -116,10 +90,10 @@
         android:id="@+id/txt_confircontra1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="48dp"
         android:text="Confirmar contraseña"
         app:layout_constraintEnd_toStartOf="@+id/txt_confirmcont2"
-        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintHorizontal_bias="0.333"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_contra1" />
 
@@ -127,36 +101,47 @@
         android:id="@+id/txt_confirmcont2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="12dp"
         android:ems="10"
         android:hint="Ingrese su contraseña"
         android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextText4" />
 
-    <CheckBox
-        android:id="@+id/txt_check1"
+    <TextView
+        android:id="@+id/txt_contra1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="164dp"
+        android:layout_marginTop="28dp"
+        android:text="Contraseña"
+        app:layout_constraintEnd_toStartOf="@+id/editTextText4"
+        app:layout_constraintHorizontal_bias="0.254"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_username" />
+
+    <CheckBox
+        android:id="@+id/txt_check1"
+        android:layout_width="247dp"
+        android:layout_height="33dp"
+        android:layout_marginBottom="192dp"
         android:text="Acepto terminos y condiciones"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.123"
+        app:layout_constraintHorizontal_bias="0.089"
         app:layout_constraintStart_toStartOf="parent" />
 
     <CheckBox
         android:id="@+id/txt_checkbox2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="239dp"
+        android:layout_height="34dp"
         android:text="Acepto  ttratamiento de datos"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.138"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_check1"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.018" />
 
     <CheckedTextView
         android:id="@+id/txt_terminos"
@@ -166,10 +151,10 @@
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.24"
+        app:layout_constraintHorizontal_bias="0.419"
         app:layout_constraintStart_toEndOf="@+id/txt_check1"
         app:layout_constraintTop_toBottomOf="@+id/txt_confirmcont2"
-        app:layout_constraintVertical_bias="0.206" />
+        app:layout_constraintVertical_bias="0.123" />
 
     <CheckedTextView
         android:id="@+id/txt_polit"
@@ -179,19 +164,34 @@
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.54"
         app:layout_constraintStart_toEndOf="@+id/txt_checkbox2"
         app:layout_constraintTop_toBottomOf="@+id/txt_terminos"
-        app:layout_constraintVertical_bias="0.187" />
+        app:layout_constraintVertical_bias="0.07" />
 
     <TextView
         android:id="@+id/txt_nombre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="280dp"
+        android:layout_marginTop="252dp"
         android:text="Nombre"
         android:textSize="16sp"
         app:layout_constraintEnd_toStartOf="@+id/txt_nombre1"
-        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txt_nombre1"
+        android:layout_width="259dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="232dp"
+        android:ems="10"
+        android:hint="Ingrese su nombre completo"
+        android:inputType="text"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.868"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -199,12 +199,12 @@
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="40dp"
+        android:layout_marginBottom="72dp"
         android:text="REGISTRARME"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.531"
+        app:layout_constraintHorizontal_bias="0.539"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
@@ -212,6 +212,7 @@
         android:layout_width="45dp"
         android:layout_height="39dp"
         android:layout_marginBottom="48dp"
+        android:onClick="Anterior"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/button2"
         app:layout_constraintHorizontal_bias="0.185"

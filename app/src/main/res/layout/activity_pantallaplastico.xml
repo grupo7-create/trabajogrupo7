@@ -11,13 +11,13 @@
         android:id="@+id/txt_plastico"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="144dp"
-        android:layout_marginBottom="396dp"
+        android:layout_marginBottom="444dp"
         android:text="Plastico"
         android:textSize="34sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
         android:id="@+id/imaj_plast"
@@ -28,24 +28,25 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_EcoRecicla5"
         app:srcCompat="@drawable/plastico_recicla" />
 
     <TextView
         android:id="@+id/txt_EcoRecicla5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="152dp"
+        android:layout_marginTop="128dp"
         android:text="EcoRecicla"
         android:textSize="34sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@+id/imageView9" />
 
     <ImageView
         android:id="@+id/imageView9"
-        android:layout_width="416dp"
-        android:layout_height="155dp"
+        android:layout_width="412dp"
+        android:layout_height="121dp"
         app:srcCompat="@drawable/ecoreciclagr7"
         tools:layout_editor_absoluteX="-2dp"
         tools:layout_editor_absoluteY="-4dp" />
@@ -54,23 +55,25 @@
         android:id="@+id/num_peso1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="360dp"
         android:text="Peso (Klg)"
         android:textSize="24sp"
         app:layout_constraintEnd_toStartOf="@+id/num_pesoplast"
-        app:layout_constraintHorizontal_bias="0.695"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="363dp" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/num_precio1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
         android:text="Precio"
         android:textSize="24sp"
         app:layout_constraintEnd_toStartOf="@+id/num_precioplast"
-        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintHorizontal_bias="0.701"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="415dp" />
+        app:layout_constraintTop_toBottomOf="@+id/num_peso1" />
 
     <TextView
         android:id="@+id/txt_mes2"
@@ -78,42 +81,34 @@
         android:layout_height="wrap_content"
         android:text="Mes"
         android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView12"
         app:layout_constraintEnd_toStartOf="@+id/txt_mesplast"
-        app:layout_constraintHorizontal_bias="0.465"
+        app:layout_constraintHorizontal_bias="0.771"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="474dp" />
-
-    <Button
-        android:id="@+id/button11"
-        android:layout_width="41dp"
-        android:layout_height="37dp"
-        android:layout_marginBottom="48dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.145"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_mes2"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toBottomOf="@+id/num_precio1"
+        app:layout_constraintVertical_bias="0.25" />
 
     <EditText
         android:id="@+id/num_pesoplast"
         android:layout_width="257dp"
         android:layout_height="43dp"
-        android:layout_marginEnd="20dp"
+        android:layout_marginEnd="28dp"
         android:layout_marginBottom="20dp"
         android:ems="10"
         android:hint="Ingresa  el peso del plastico  a reciclar (Klg)"
         android:inputType="numberDecimal"
         android:textSize="12sp"
         app:layout_constraintBottom_toTopOf="@+id/num_precioplast"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.924" />
 
     <EditText
         android:id="@+id/num_precioplast"
         android:layout_width="238dp"
         android:layout_height="39dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="24dp"
         android:ems="10"
         android:hint="Ingrese el precio del klg de plastico"
         android:inputType="numberDecimal"
@@ -125,8 +120,8 @@
         android:id="@+id/txt_mesplast"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="40dp"
-        android:layout_marginBottom="64dp"
+        android:layout_marginEnd="72dp"
+        android:layout_marginBottom="48dp"
         android:ems="10"
         android:hint="Ingrese  el mes"
         android:inputType="text"
@@ -149,9 +144,11 @@
         android:id="@+id/imageView12"
         android:layout_width="52dp"
         android:layout_height="51dp"
+        android:layout_marginBottom="64dp"
+        android:onClick="categoriaplastico"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.144"
+        app:layout_constraintHorizontal_bias="0.15"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/atras"
-        tools:layout_editor_absoluteY="635dp" />
+        app:srcCompat="@drawable/atras" />
 </androidx.constraintlayout.widget.ConstraintLayout>

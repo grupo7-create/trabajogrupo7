@@ -1,6 +1,8 @@
 package com.example.ecoreciclagrupo7;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -16,6 +18,10 @@ public class papelrecicla extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_papelrecicla);
 
-        });
+    }
+    //metodo para el boton Ir a pantalplastico
+    public void categoriapapel(View view) {
+        Intent categoriapapel = new Intent(this, categorias.class);
+        startActivity(categoriapapel);
     }
 }

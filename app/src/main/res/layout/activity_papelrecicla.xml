@@ -97,16 +97,6 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <Button
-        android:id="@+id/button15"
-        android:layout_width="38dp"
-        android:layout_height="27dp"
-        android:layout_marginBottom="36dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.09"
-        app:layout_constraintStart_toStartOf="parent" />
-
     <EditText
         android:id="@+id/num_pesopapel1"
         android:layout_width="212dp"
@@ -152,6 +142,7 @@
         android:id="@+id/imageView14"
         android:layout_width="54dp"
         android:layout_height="48dp"
+        android:onClick="categoriapapel"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.089"

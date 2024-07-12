@@ -19,16 +19,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="53dp"
-        android:layout_height="35dp"
-        android:layout_marginBottom="64dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.101"
-        app:layout_constraintStart_toStartOf="parent" />
-
     <TextView
         android:id="@+id/txt_agua"
         android:layout_width="wrap_content"
@@ -48,8 +38,9 @@
         android:layout_height="79dp"
         android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toTopOf="@+id/txt_agua"
-        app:srcCompat="@drawable/agua_recicla"
-        tools:layout_editor_absoluteX="168dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/agua_recicla" />
 
     <TextView
         android:id="@+id/txt_volumen"
@@ -149,7 +140,8 @@
         android:id="@+id/imageView11"
         android:layout_width="72dp"
         android:layout_height="52dp"
-        android:layout_marginBottom="52dp"
+        android:layout_marginBottom="40dp"
+        android:onClick="categoriaagua"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/button10"
         app:layout_constraintHorizontal_bias="0.264"
