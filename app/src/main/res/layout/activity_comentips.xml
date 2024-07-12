@@ -32,7 +32,7 @@
         android:layout_width="153dp"
         android:layout_height="29dp"
         android:layout_marginTop="8dp"
-        android:text="Comentarios"
+        android:text="Consejos"
         android:textSize="24sp"
         android:textStyle="bold|italic"
         app:layout_constraintEnd_toEndOf="parent"
@@ -43,6 +43,7 @@
         android:id="@+id/button19"
         android:layout_width="39dp"
         android:layout_height="31dp"
+        android:onClick="consejos"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.155"
@@ -60,5 +61,21 @@
         app:layout_constraintHorizontal_bias="0.125"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/atras" />
+
+    <EditText
+        android:id="@+id/txt_consejo"
+        android:layout_width="281dp"
+        android:layout_height="241dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Nuevo consejo"
+        android:inputType="textMultiLine"
+        android:textSize="14sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_comentarios1"
+        app:layout_constraintVertical_bias="0.128" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

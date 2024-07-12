@@ -21,7 +21,7 @@ public class categorias extends AppCompatActivity {
     }
     //metodo para el boton regresar a Principal
     public void Anterior(View view) {
-        Intent Anterior = new Intent(this, MainActivity.class);
+        Intent Anterior = new Intent(this, Principal.class);
         startActivity(Anterior);
     }
     //metodo para el boton Ir a pantallagua

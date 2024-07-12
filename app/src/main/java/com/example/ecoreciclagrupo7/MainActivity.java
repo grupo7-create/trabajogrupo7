@@ -25,9 +25,9 @@ public class MainActivity extends AppCompatActivity {
         Intent  Registrar = new Intent(this, registro.class);
         startActivity(Registrar);
     }
-    //metodo para el boton Ingresar
+    //metodo para el boton Ingresar hacia principal
     public void Ingresar(View view) {
-        Intent Ingresar = new Intent(this, categorias.class);
+        Intent Ingresar = new Intent(this, Principal.class);
         startActivity(Ingresar);
     }
 }
