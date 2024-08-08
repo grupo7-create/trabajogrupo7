@@ -11,7 +11,7 @@
         android:id="@+id/txt_EcoRecicla5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="168dp"
+        android:layout_marginTop="152dp"
         android:text="EcoRecicla"
         android:textSize="34sp"
         android:textStyle="bold"
@@ -23,12 +23,12 @@
         android:id="@+id/txt_agua"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="312dp"
+        android:layout_marginTop="284dp"
         android:text="Agua"
         android:textSize="34sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -39,6 +39,7 @@
         android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toTopOf="@+id/txt_agua"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/agua_recicla" />
 
@@ -47,7 +48,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="28dp"
-        android:layout_marginTop="388dp"
+        android:layout_marginTop="404dp"
         android:text="Volumen"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -71,61 +72,67 @@
         android:layout_marginTop="24dp"
         android:text="Mes"
         android:textSize="24sp"
-        app:layout_constraintEnd_toStartOf="@+id/txt_mes1"
+        app:layout_constraintEnd_toStartOf="@+id/txt_mesagua1"
         app:layout_constraintHorizontal_bias="0.487"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_precioagua" />
 
     <EditText
-        android:id="@+id/num_peso"
+        android:id="@+id/num_volagua"
         android:layout_width="256dp"
         android:layout_height="43dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="72dp"
         android:ems="10"
-        android:hint="Ingresa volumen de agua  reutilizada(M3)"
+        android:hint="Volumen de agua(M3)"
         android:inputType="numberDecimal"
-        android:textSize="12sp"
+        android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.515"
         app:layout_constraintStart_toEndOf="@+id/txt_volumen"
         app:layout_constraintTop_toBottomOf="@+id/txt_agua" />
 
     <EditText
-        android:id="@+id/num_precio"
-        android:layout_width="250dp"
-        android:layout_height="36dp"
-        android:layout_marginTop="16dp"
+        android:id="@+id/num_precioagua"
+        android:layout_width="241dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
         android:ems="10"
-        android:hint="Ingresa el precio del agua (M3)"
+        android:hint="precio del agua (M3)"
         android:inputType="numberDecimal"
-        android:textSize="12sp"
+        android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.679"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/txt_precioagua"
-        app:layout_constraintTop_toBottomOf="@+id/num_peso" />
+        app:layout_constraintTop_toBottomOf="@+id/num_volagua" />
 
     <EditText
-        android:id="@+id/txt_mes1"
+        android:id="@+id/txt_mesagua1"
         android:layout_width="239dp"
         android:layout_height="51dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="28dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
         android:ems="10"
         android:hint="Ingresa el mes"
         android:inputType="text"
+        android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/num_precio" />
+        app:layout_constraintTop_toBottomOf="@+id/num_precioagua" />
 
     <Button
         android:id="@+id/button10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="RegistrarAgua"
         android:text="REGISTRAR"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.759"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_mes1"
+        app:layout_constraintTop_toBottomOf="@+id/txt_mesagua1"
         app:layout_constraintVertical_bias="0.466" />
 
     <ImageView
@@ -147,5 +154,34 @@
         app:layout_constraintHorizontal_bias="0.264"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/atras" />
+
+    <TextView
+        android:id="@+id/txt_categotit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:text="Categoria"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_agua" />
+
+    <EditText
+        android:id="@+id/txt_categoria2"
+        android:layout_width="245dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="20dp"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Agua"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.425"
+        app:layout_constraintStart_toEndOf="@+id/txt_categotit"
+        app:layout_constraintTop_toBottomOf="@+id/txt_agua" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -11,12 +11,12 @@
         android:id="@+id/imaj_vidrio"
         android:layout_width="75dp"
         android:layout_height="77dp"
-        android:layout_marginEnd="168dp"
         android:layout_marginBottom="12dp"
         app:layout_constraintBottom_toTopOf="@+id/txt_vidrio"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_Ecorrecicla8"
-        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/vidrio_recicla" />
 
     <TextView
@@ -32,12 +32,12 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_Ecorrecicla8"
-        app:layout_constraintVertical_bias="0.679" />
+        app:layout_constraintVertical_bias="0.56" />
 
     <ImageView
         android:id="@+id/imageView15"
-        android:layout_width="400dp"
-        android:layout_height="174dp"
+        android:layout_width="396dp"
+        android:layout_height="130dp"
         app:srcCompat="@drawable/ecoreciclagr7"
         tools:layout_editor_absoluteX="7dp"
         tools:layout_editor_absoluteY="-2dp" />
@@ -46,7 +46,7 @@
         android:id="@+id/txt_Ecorrecicla8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="172dp"
+        android:layout_marginTop="128dp"
         android:text="EcoRecicla"
         android:textSize="34sp"
         android:textStyle="bold"
@@ -58,12 +58,12 @@
         android:id="@+id/txt_pesovidrio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="384dp"
+        android:layout_marginTop="404dp"
         android:hint="Peso (kg)"
         android:text="Peso(kg)"
         android:textSize="24sp"
         app:layout_constraintEnd_toStartOf="@+id/num_pesovidrio"
-        app:layout_constraintHorizontal_bias="0.659"
+        app:layout_constraintHorizontal_bias="0.607"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -95,8 +95,8 @@
         android:id="@+id/num_pesovidrio"
         android:layout_width="246dp"
         android:layout_height="45dp"
-        android:layout_marginTop="372dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginTop="392dp"
+        android:layout_marginEnd="12dp"
         android:ems="10"
         android:hint="Introduzca peso del vidrio en Kg."
         android:inputType="numberDecimal"
@@ -108,7 +108,7 @@
         android:id="@+id/num_preciovidrio"
         android:layout_width="243dp"
         android:layout_height="42dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="20dp"
         android:ems="10"
         android:hint="Introduzca precio del vidrio(kg)"
@@ -123,7 +123,7 @@
         android:id="@+id/txt_mesvidrio1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="28dp"
         android:layout_marginEnd="76dp"
         android:ems="10"
         android:hint="Introduzca mes"
@@ -139,6 +139,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="72dp"
+        android:onClick="RegistrarVidrio"
         android:text="REGISTRAR"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -158,5 +159,33 @@
         app:layout_constraintTop_toBottomOf="@+id/txt_mesvidrio"
         app:layout_constraintVertical_bias="0.762"
         app:srcCompat="@drawable/atras" />
+
+    <TextView
+        android:id="@+id/txt_vidrio3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Categoria"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/txt_pesovidrio"
+        app:layout_constraintEnd_toStartOf="@+id/txt_vidrio4"
+        app:layout_constraintHorizontal_bias="0.625"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_vidrio"
+        app:layout_constraintVertical_bias="0.021" />
+
+    <EditText
+        android:id="@+id/txt_vidrio4"
+        android:layout_width="224dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="36dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Vidrio"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_vidrio" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

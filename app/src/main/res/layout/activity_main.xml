@@ -45,40 +45,29 @@
         android:id="@+id/txt_usuario1"
         android:layout_width="296dp"
         android:layout_height="46dp"
-        android:layout_marginTop="328dp"
+        android:layout_marginTop="68dp"
         android:ems="10"
         android:hint="Ingrese su usuario"
         android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.486"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/txt_contraseña1"
-        android:layout_width="292dp"
-        android:layout_height="44dp"
-        android:layout_marginTop="52dp"
-        android:ems="10"
-        android:hint="Ingrese  su contraseña"
-        android:inputType="text"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.47"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_usuario1" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_ecorecicla" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginBottom="196dp"
         android:onClick="Ingresar"
         android:text="Ingresar"
         android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_contraseña1" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_usuario1"
+        app:layout_constraintVertical_bias="1.0" />
 
     <CheckedTextView
         android:id="@+id/txt_recuperacontraseña"
@@ -140,5 +129,19 @@
         app:layout_constraintHorizontal_bias="0.181"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txt_contraseña1"
+        android:layout_width="293dp"
+        android:layout_height="44dp"
+        android:ems="10"
+        android:hint="Ingrese su contraseña"
+        android:inputType="textPassword"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_usuario1"
+        app:layout_constraintVertical_bias="0.714" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
